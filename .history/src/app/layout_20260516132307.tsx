@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Cinzel, Poppins  } from "next/font/google";
+import { Geist, Geist_Mono,Cinzel  } from "next/font/google";
 import "./globals.css";
 import Footer from "@/features/home/components/Footer";
 
@@ -23,12 +23,6 @@ const cinzel = Cinzel({
   weight: ["400", "500", "600", "700"],
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable}  ${cinzel.variable}   ${poppins.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable}   ${cinzel.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}
