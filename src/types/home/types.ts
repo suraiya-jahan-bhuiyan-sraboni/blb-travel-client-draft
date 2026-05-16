@@ -5,5 +5,5 @@ export interface TravelPackage {
   duration: string;
   price: string;
   image: string;
-  agency: number;
+  agency: string;
 }
