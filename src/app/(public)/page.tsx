@@ -1,3 +1,4 @@
+import ClientReview from "@/features/home/components/ClientReview";
 import PackageList from "@/features/home/components/PackageList";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <main>
       <h1>Welcome to BLB Travel</h1>
       <PackageList />
+      <ClientReview />
     </main>
   );
 }

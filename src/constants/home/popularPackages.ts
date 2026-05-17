@@ -7,7 +7,7 @@ export const popularPackages: TravelPackage[] = [
     cities: ["Kuala Lumpur", "Penang", "Langkawi"],
     duration: "7 Nights / 8 Days",
     price: "Starting From : BDT 1,10,000 / person",
-    image: "/popular-packages/malaysia.jpg", 
+    image: "/images/popular-packages/malaysia.jpg", 
     agency: "Agency B",
   },
   {
@@ -16,7 +16,7 @@ export const popularPackages: TravelPackage[] = [
     cities: ["Bali", "Ubud", "Nusa Penida"],
     duration: "6 Nights / 7 Days",
     price: "Starting From : BDT 70,000 / person",
-    image: "/popular-packages/indonesia.jpg", 
+    image: "/images/popular-packages/indonesia.jpg", 
     agency: "Agency C",
   },
   {
@@ -25,7 +25,7 @@ export const popularPackages: TravelPackage[] = [
     cities: ["Bangkok", "Phuket", "Chiang Mai"],
     duration: "7 Nights / 8 Days",
     price: "Starting From : BDT 90,000 / person",
-    image: "/popular-packages/thailand.jpg", 
+    image: "/images/popular-packages/thailand.jpg", 
     agency: "Agency A",
   },
 ];

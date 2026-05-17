@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
-// Swiper এর প্রয়োজনীয় সিএসএস
 import 'swiper/css';
 import 'swiper/css/navigation'; 
 
