@@ -9,10 +9,10 @@ export default function ExpertConsultation() {
   return (
     <>
       <section className="relative h-screen w-full overflow-hidden bg-[url('/bg-frame.png')] bg-cover bg-center">
-  
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black/60" />
 
-       
+        {/* Content */}
         <div className="relative z-10 flex h-full items-center">
           <div className="px-6 md:px-20">
             <div className="max-w-2xl">
