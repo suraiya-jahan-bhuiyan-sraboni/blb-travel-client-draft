@@ -4,17 +4,14 @@ import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 
 export default function Feedback() {
-  // ফর্ম ওপেন এবং ক্লোজ করার জন্য স্টেট
   const [isOpen, setIsOpen] = useState(false);
 
-  // ইনপুট ফিল্ডের ডাটা স্টেট
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     feedback: "",
   });
 
-  // TanStack Query v5 Mutation
   const { mutate, isPending } = useMutation({
     mutationFn: async (newFeedback: typeof formData) => {
       const response = await fetch("/api/feedback", {
@@ -53,8 +50,6 @@ export default function Feedback() {
     <section className="w-full bg-[#F0F0F0] text-black py-10 md:py-14 px-6 md:px-[32px] lg:px-20 xl:px-[120px] overflow-hidden">
       <div className="max-w-[1440px] mx-auto relative">
 
-        {/* ==================== ১. ডিফল্ট CTA কন্টেন্ট সেকশন ==================== */}
-        {/* isOpen সত্য হলে এই সেকশনটি অ্যানিমেশনের মাধ্যমে হাইড (hidden) হয়ে যাবে */}
         <div
           className={`flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:gap-10 lg:text-left transition-all duration-500 ease-in-out ${isOpen ? "opacity-0 max-h-0 pointer-events-none scale-95" : "opacity-100 max-h-[500px] scale-100"
             }`}
@@ -81,15 +76,12 @@ export default function Feedback() {
           </button>
         </div>
 
-        {/* ==================== ২. অ্যানিমেটেড ফিডব্যাক ফর্ম সেকশন ==================== */}
-        {/* isOpen সত্য হলে এটি ওপর থেকে নিচে স্মুথলি নেমে আসবে এবং ভিজিবল হবে */}
         <div
           className={`transition-all duration-500 ease-in-out transform ${isOpen
               ? "opacity-100 max-h-[1000px] translate-y-0 scale-100"
               : "opacity-0 max-h-0 -translate-y-10 scale-95 pointer-events-none"
             }`}
         >
-          {/* ফর্ম হেডার সেকশন */}
           <div className="flex justify-between items-start mb-8">
             <div>
               <span className="font-switzer text-[11px] leading-[16.5px] tracking-[2.5px] text-[#FE9A00] font-bold uppercase block mb-3">
@@ -100,7 +92,6 @@ export default function Feedback() {
               </h3>
             </div>
 
-            {/* CLOSE বাটন উইথ অ্যারো (▲) */}
             <button
               onClick={() => setIsOpen(false)}
               className="font-switzer text-[13px] tracking-[1px] bg-[#E2E8F0] hover:bg-gray-300 text-[#334155] font-semibold px-4 py-2 rounded flex items-center gap-1.5 transition-all cursor-pointer"
@@ -109,10 +100,8 @@ export default function Feedback() {
             </button>
           </div>
 
-          {/* ফর্ম বডি */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Name Input */}
               <div className="flex flex-col gap-2">
                 <label className="font-switzer text-[11px] tracking-[1.5px] font-bold text-gray-600 uppercase">
                   YOUR NAME
@@ -126,8 +115,6 @@ export default function Feedback() {
                   className="w-full bg-white text-black px-4 py-3 rounded-[4px] border border-gray-200 focus:outline-none focus:border-[#FE9A00] font-switzer text-[14px]"
                 />
               </div>
-
-              {/* Email Input */}
               <div className="flex flex-col gap-2">
                 <label className="font-switzer text-[11px] tracking-[1.5px] font-bold text-gray-600 uppercase">
                   EMAIL ADDRESS
@@ -143,7 +130,6 @@ export default function Feedback() {
               </div>
             </div>
 
-            {/* Feedback Input */}
             <div className="flex flex-col gap-2">
               <label className="font-switzer text-[11px] tracking-[1.5px] font-bold text-gray-600 uppercase">
                 YOUR FEEDBACK
@@ -158,7 +144,6 @@ export default function Feedback() {
               />
             </div>
 
-            {/* Submit Button (নিচে ডানে প্লেসড) */}
             <div className="flex justify-end">
               <button
                 type="submit"

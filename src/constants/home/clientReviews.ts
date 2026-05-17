@@ -1,4 +1,4 @@
-import { ClientReviews } from "@/types/home/types";
+import { ClientReviews } from "@/types/home/clientReviews.types";
 
 export const clientReviews : ClientReviews[] = [
     {

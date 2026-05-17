@@ -1,4 +1,4 @@
-import { TravelPackage } from "@/types/home/types";
+import { TravelPackage } from "@/types/home/travelPackage.types";
 
 export const popularPackages: TravelPackage[] = [
   {
