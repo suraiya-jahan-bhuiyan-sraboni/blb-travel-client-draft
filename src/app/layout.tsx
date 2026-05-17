@@ -1,6 +1,16 @@
+import localFont from 'next/font/local';
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Lora, Switzer } from "next/font/google";
+import { Geist, Geist_Mono, Lora } from "next/font/google";
 import "./globals.css";
+// const switzer = localFont({
+//   src: '../../public/fonts/Switzer.woff2',
+//   variable: '--font-switzer',
+//   display: 'swap',
+// });
+const lora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
