@@ -33,7 +33,7 @@ export default function PackageList() {
                         For years, we have been crafting meaningful journeys with a commitment to transparency, safety, and global standards. Our certifications reflect our promise — to travel responsibly, operate ethically, and deliver experiences you can trust.  
                         <Link href="/about" className='cursor-pointer hover:underline font-medium ml-1'>Learn More</Link>
                     </p>
-                    <button className='border hover:bg-[#FE9A00] hover:text-black cursor-pointer transition duration-400 ease-in-out border-[#FE9A00] text-[#FFA500] px-6 py-3 tracking-wider font-medium text-sm'>
+                    <button className='border font-switzer hover:bg-[#FE9A00] hover:text-black cursor-pointer transition duration-400 ease-in-out border-[#FE9A00] text-[#FFA500] px-6 py-3 tracking-wider font-medium text-sm'>
                         Explore Packages
                     </button>
                 </div>
@@ -69,7 +69,7 @@ export default function PackageList() {
                                     </div>
 
                                     <div className="absolute bottom-6 left-10 right-10 flex justify-between items-center text-white transition-opacity duration-300 group-hover/card:opacity-0 z-10">
-                                        <h3 className="text-2xl font-serif font-bold tracking-wide drop-shadow-md">
+                                        <h3 className="text-2xl font-lora font-bold tracking-wide drop-shadow-md">
                                             {pkg.country}
                                         </h3>
                                         <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-sm font-bold">
@@ -78,7 +78,7 @@ export default function PackageList() {
                                     </div>
                                     <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-6 text-black flex flex-col gap-4 h-60 translate-y-6 opacity-0 pointer-events-none group-hover/card:translate-y-0 group-hover/card:opacity-100 group-hover/card:pointer-events-auto transition-all duration-1000 ease-in-out z-20">
                                         
-                                        <h3 className="text-2xl font-serif font-bold tracking-wide text-gray-900">
+                                        <h3 className="text-2xl font-lora font-bold tracking-wide text-gray-900">
                                             {pkg.country}
                                         </h3>
                                         
