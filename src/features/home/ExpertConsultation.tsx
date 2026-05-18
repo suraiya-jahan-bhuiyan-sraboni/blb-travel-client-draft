@@ -7,7 +7,7 @@ import Link from "next/link";
 const ExpertConsultation = () => {
   return (
     <section className="relative w-full h-[520px] overflow-hidden">
-      {/* Background Image */}
+   
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -15,13 +15,13 @@ const ExpertConsultation = () => {
         }}
       />
 
-      {/* Dark Overlay */}
+    
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
       <div className="relative z-10 flex h-full items-center px-6 md:px-16 lg:px-24">
         <div className="max-w-[520px]">
-          {/* Heading */}
+       
           <h2
             className="
               font-lora
@@ -40,7 +40,7 @@ const ExpertConsultation = () => {
             Consultation
           </h2>
 
-          {/* Description */}
+      
           <p
             className="
               mt-5
@@ -58,7 +58,7 @@ const ExpertConsultation = () => {
             detail.
           </p>
 
-          {/* Button */}
+      
           <Link
             href="/consultation"
             className="
