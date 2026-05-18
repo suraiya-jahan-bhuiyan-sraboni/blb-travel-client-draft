@@ -1,4 +1,4 @@
-// src/features/home/ExpertConsultation.tsx
+
 
 "use client";
 
@@ -18,7 +18,7 @@ const ExpertConsultation = () => {
     
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Content */}
+    
       <div className="relative z-10 flex h-full items-center px-6 md:px-16 lg:px-24">
         <div className="max-w-[520px]">
        
