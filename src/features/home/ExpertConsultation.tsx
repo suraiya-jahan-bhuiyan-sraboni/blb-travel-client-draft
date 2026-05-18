@@ -2,10 +2,16 @@
 
 "use client";
 
-import Link from "next/link";
+
+import { useState } from "react";
+import ScheduleConsultationModal from "./ScheduleConsultationModal";
 
 const ExpertConsultation = () => {
-  return (
+     const [isModalOpen, setIsModalOpen] = useState(false);
+    return (
+      
+
+        <>
     <section className="relative w-full h-[520px] overflow-hidden">
    
       <div
@@ -59,8 +65,8 @@ const ExpertConsultation = () => {
           </p>
 
       
-          <Link
-            href="/consultation"
+          <button
+              onClick={() => setIsModalOpen(true)}
             className="
               mt-8
               inline-flex
@@ -84,10 +90,18 @@ const ExpertConsultation = () => {
             "
           >
             Schedule Consultation
-          </Link>
+          </button>
         </div>
       </div>
     </section>
+
+
+      <ScheduleConsultationModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+            />
+            
+            </>
   );
 };
 

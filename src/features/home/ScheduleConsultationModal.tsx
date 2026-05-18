@@ -129,7 +129,7 @@ export default function ScheduleConsultationModal({
             />
           </div>
 
-          {/* Service */}
+        
           <div>
             <label className="mb-2 block text-[11px] uppercase tracking-[3px] text-gray-700">
               Service Interested In *
@@ -161,6 +161,10 @@ export default function ScheduleConsultationModal({
 
        
           <div>
+
+
+
+            
             <label className="mb-2 block text-[11px] uppercase tracking-[3px] text-gray-700">
               Preferred Time *
             </label>
