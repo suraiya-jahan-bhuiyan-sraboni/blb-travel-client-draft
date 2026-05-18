@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Cinzel, Poppins  } from "next/font/google";
+import { Geist, Geist_Mono, Cinzel, Lora, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/features/home/Footer";
 import NewsletterSection from "@/features/home/NewsletterSection";
-import ExpertConsultation from "@/features/home/ExpertConsultation";
+import QueryProvider from "@/providers/QueryProvider";
+
+const lora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,13 +44,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable}  ${cinzel.variable}   ${poppins.variable} h-full antialiased`}
-    >
+      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        {children}
-        <ExpertConsultation/>
-        <NewsletterSection/>
-        <Footer/>
+        <QueryProvider>
+          {children}
+        </QueryProvider>
+        <NewsletterSection />
+        <Footer />
 
       </body>
     </html>
