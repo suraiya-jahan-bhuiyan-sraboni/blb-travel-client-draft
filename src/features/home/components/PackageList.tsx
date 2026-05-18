@@ -25,8 +25,8 @@ export default function PackageList() {
                 }
             `}</style>
             <div className='flex flex-col lg:flex-row gap-12 items-center'>
-                <div className='w-full lg:w-[35%] md:items-center lg:items-start flex flex-col items-center'>
-                    <h1 className='lg:text-[40px] md:text-[32px] text-[24px]  --font-lora mb-4 font-normal leading-18 tracking-[2.5px] font-lora text-white uppercase'>
+                <div className='w-full lg:w-[30%] md:items-center lg:items-start flex flex-col items-center'>
+                    <h1 className='lg:text-[40px] md:text-[32px] text-[24px] mb-4 font-normal leading-18 tracking-[2.5px] font-lora text-white uppercase'>
                         POPULAR PACKAGES
                     </h1>
                     <p className='text-[13px] w-full font-switzer mb-10 leading-5.5 tracking-[1.2px] lg:max-w-sm'>

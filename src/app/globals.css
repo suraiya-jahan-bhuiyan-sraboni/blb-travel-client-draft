@@ -49,3 +49,11 @@ body {
 .font-poppins {
   font-family: var(--font-poppins);
 }
+
+.font-lora {
+  font-family: var(--font-lora);
+}
+
+.font-switzer {
+  font-family: 'SwitzerCustom', sans-serif;
+}
