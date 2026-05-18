@@ -33,7 +33,12 @@ export default function CustomDatePicker({
         dateFormat="MMMM d, yyyy"
         minDate={new Date()}
         popperPlacement="bottom-start"
-        calendarClassName="custom-datepicker"
+              calendarClassName="custom-datepicker"
+              
+               showPopperArrow={false}
+  formatWeekDay={(nameOfDay) =>
+    nameOfDay.substring(0, 2).toUpperCase()
+  }
         className="ml-3 w-full bg-transparent text-sm outline-none"
       />
     </div>
