@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/features/home/Footer";
 import NewsletterSection from "@/features/home/NewsletterSection";
 import QueryProvider from "@/providers/QueryProvider";
+import ExpertConsultation from "@/features/home/ExpertConsultation";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -49,6 +50,7 @@ export default function RootLayout({
         <QueryProvider>
           {children}
         </QueryProvider>
+        <ExpertConsultation/>
         <NewsletterSection />
         <Footer />
 
