@@ -1,8 +1,11 @@
-export default function OffersPage() {
+import OffersHero from "@/features/offers/components/OffersHero";
+
+const OffersPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-10">
-      <h1 className="text-4xl font-bold">Special Offers</h1>
-      <p className="mt-4 text-lg text-zinc-600">Exclusive travel deals available only at BLB Travels.</p>
-    </div>
+    <main>
+      <OffersHero />
+    </main>
   );
-}
+};
+
+export default OffersPage;

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { exclusiveOffers } from "@/constants/exclusiveOffers";
+import Link from "next/link";
 
 export default function ExclusiveOffers() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -285,7 +286,8 @@ export default function ExclusiveOffers() {
 
       
         <div className="flex justify-center">
-          <button
+          <Link
+            href="/offers"
             className="
               border
               border-[#E6A817]
@@ -299,7 +301,7 @@ export default function ExclusiveOffers() {
             "
           >
             View More
-          </button>
+          </Link>
         </div>
       </div>
     </section>
