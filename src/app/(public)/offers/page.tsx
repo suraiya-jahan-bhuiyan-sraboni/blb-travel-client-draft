@@ -1,8 +1,24 @@
-export default function OffersPage() {
+
+import Feedback from "@/features/home/components/FeedBack";
+import ExploreBangladesh from "@/features/offers/components/ExploreBangladesh";
+import OffersHero from "@/features/offers/components/OffersHero";
+import PopularPackages from "@/features/offers/components/PopularPackages";
+
+
+
+
+const OffersPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-10">
-      <h1 className="text-4xl font-bold">Special Offers</h1>
-      <p className="mt-4 text-lg text-zinc-600">Exclusive travel deals available only at BLB Travels.</p>
-    </div>
+    <main>
+      <OffersHero />
+      <PopularPackages />
+      <Feedback />
+      <ExploreBangladesh/>
+     
+   
+  
+    </main>
   );
-}
+};
+
+export default OffersPage;
