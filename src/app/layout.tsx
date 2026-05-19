@@ -4,6 +4,9 @@ import "./globals.css";
 import Footer from "@/features/home/Footer";
 import NewsletterSection from "@/features/home/NewsletterSection";
 import QueryProvider from "@/providers/QueryProvider";
+import Navbar from "@/features/home/components/Navbar";
+import HeroSection from "@/features/home/components/HeroSection";
+import TrustSection from "@/features/home/components/TrustSection";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -46,6 +49,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
+        <Navbar />
+        <HeroSection />
+        <TrustSection />
         <QueryProvider>
           {children}
         </QueryProvider>
