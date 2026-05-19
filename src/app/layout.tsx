@@ -62,7 +62,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${switzer.variable} h-full antialiased`}>
+      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${lora.variable} ${switzer.variable} h-full antialiased`}>
+
       <body className="min-h-full flex flex-col">
         <QueryProvider>
           {children}
