@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         "lora": ["var(--font-lora)", "sans-serif"],
-        switzer: ["SwitzerCustom", "sans-serif"],
+        switzer: ["var(--font-switzer)", "sans-serif"],
         "geist-sans": ["var(--font-geist-sans)", "sans-serif"],
         "geist-mono": ["var(--font-geist-mono)", "monospace"],
       }
