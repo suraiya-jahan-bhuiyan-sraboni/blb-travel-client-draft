@@ -6,23 +6,7 @@
   --foreground: #171717;
 }
 
-@font-face {
-  font-family: 'SwitzerCustom';
-  src: url('/fonts/Switzer.woff2') format('woff2'),
-       url('/fonts/Switzer.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: 'SwitzerCustom';
-  src: url('/fonts/Switzer-Bold.woff2') format('woff2'),
-       url('/fonts/SwitzerB.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 @theme inline {
   --color-background: var(--background);
