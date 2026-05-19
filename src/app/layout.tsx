@@ -7,6 +7,8 @@ import QueryProvider from "@/providers/QueryProvider";
 import Navbar from "@/features/home/components/Navbar";
 import HeroSection from "@/features/home/components/HeroSection";
 import TrustSection from "@/features/home/components/TrustSection";
+import ExpertConsultation from "@/features/home/ExpertConsultation";
+import localFont from "next/font/local";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -39,6 +41,22 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const switzer = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Switzer-Extralight.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Switzer-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-switzer",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -47,7 +65,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} h-full antialiased`}>
+      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${lora.variable} ${switzer.variable} h-full antialiased`}>
+
       <body className="min-h-full flex flex-col">
         <Navbar />
         <HeroSection />
@@ -55,6 +74,7 @@ export default function RootLayout({
         <QueryProvider>
           {children}
         </QueryProvider>
+        <ExpertConsultation/>
         <NewsletterSection />
         <Footer />
 

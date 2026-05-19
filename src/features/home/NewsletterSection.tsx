@@ -3,17 +3,18 @@ const NewsletterSection = () => {
     <section className="bg-[#F3F3F3] py-[90px] sm:py-[110px] lg:py-[130px]">
       <div className="mx-auto flex max-w-[900px] flex-col items-center px-6 text-center">
         
-        <h2 className="font-cinzel text-[58px] font-[300] uppercase leading-[1.12] tracking-[0.08em] text-[#2E3445] sm:text-[78px] lg:text-[96px]">
+        <h2 className="font-switzer text-[80px] font-extralight leading-[100px] tracking-[2.5px] text-[#1E293B]">
           Travel
           <br />
           Partner
         </h2>
 
-        <p className="font-poppins mt-10 max-w-[700px] text-[20px] font-[300] leading-[1.45] tracking-[0.01em] text-[#8A93A5] sm:text-[26px] lg:text-[30px]">
+        <p className="mt-6 font-switzer text-[40px] font-light leading-[48px] text-[#94A3B8]">
           Discover travel inspiration based on your
-          <br className="hidden sm:block" />
+          <br />
           preferred style.
         </p>
+
       </div>
     </section>
   );
