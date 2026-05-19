@@ -8,7 +8,7 @@ export const exclusiveOffers: ExclusiveOffer[] = [
     locations: "Zurich · Lucerne · Interlaken · Zermatt",
     date: "June 15 – June 25, 2026",
     discount: "Limited-time savings · 15% off",
-    image: "/offers/switzerland.jpg",
+    image: "/offers/switzerland.png",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const exclusiveOffers: ExclusiveOffer[] = [
     locations: "Male · Vaavu Atoll",
     date: "July 10 – July 18, 2026",
     discount: "Exclusive Deal · 20% off",
-    image: "/offers/maldives.jpg",
+    image: "/offers/maldives.png",
   },
   {
     id: 3,
@@ -26,6 +26,6 @@ export const exclusiveOffers: ExclusiveOffer[] = [
     locations: "Cairo · Giza · Luxor",
     date: "August 05 – August 14, 2026",
     discount: "Special Offer · 18% off",
-    image: "/offers/egypt.jpg",
+    image: "/offers/egypt.png",
   },
 ];
