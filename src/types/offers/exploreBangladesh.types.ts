@@ -1,4 +1,4 @@
-export interface ExclusiveOffer {
+export interface ExploreBangladeshCard {
   id: number;
   title: string;
   image: string;
