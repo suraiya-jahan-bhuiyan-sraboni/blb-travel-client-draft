@@ -7,7 +7,6 @@ import TravelGallery from "@/features/home/components/TravelGallery";
 export default function Home() {
   return (
     <main>
-      <h1>Welcome to BLB Travel</h1>
       <ExclusiveOffers/>
       <PackageList />
       <ClientReview />

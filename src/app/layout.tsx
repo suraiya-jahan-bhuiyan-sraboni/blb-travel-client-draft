@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Geist, Geist_Mono, Cinzel, Lora, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/features/home/Footer";
@@ -75,21 +74,7 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const switzer = localFont({
-  src: [
-    {
-      path: "../../public/fonts/Switzer-Extralight.woff2",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Switzer-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-switzer",
-});
+
 
 export default function RootLayout({
   children,
@@ -99,7 +84,6 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${lora.variable} ${switzer.variable} h-full antialiased`}>
       className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${lora.variable} ${switzer.variable} h-full antialiased`}>
 
       <body className="min-h-full flex flex-col">
