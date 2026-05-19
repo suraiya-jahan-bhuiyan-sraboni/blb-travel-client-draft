@@ -3,7 +3,8 @@ import { ExclusiveOffer } from "@/types/home/exclusiveOffer.types";
 export const exclusiveOffers: ExclusiveOffer[] = [
   {
     id: 1,
-    title: "Discover Switzerland",
+     title: "Discover Switzerland",
+     country: "Switzerland",
     subtitle: "Summer 2026",
     locations: "Zurich · Lucerne · Interlaken · Zermatt",
     date: "June 15 – June 25, 2026",
@@ -12,20 +13,24 @@ export const exclusiveOffers: ExclusiveOffer[] = [
   },
   {
     id: 2,
-    title: "Explore Maldives",
+     title: "Explore Maldives",
+     country: "Maldives",
     subtitle: "Luxury Escape",
     locations: "Male · Vaavu Atoll",
     date: "July 10 – July 18, 2026",
     discount: "Exclusive Deal · 20% off",
-    image: "/offers/maldives.png",
+  
+     image: "/offers/egypt.png",
   },
   {
     id: 3,
-    title: "Visit Egypt",
+      title: "Egyptian Treasures",
+     country: "Egypt",
     subtitle: "Historical Journey",
     locations: "Cairo · Giza · Luxor",
     date: "August 05 – August 14, 2026",
     discount: "Special Offer · 18% off",
-    image: "/offers/egypt.png",
+  
+      image: "/offers/maldives.png",
   },
 ];

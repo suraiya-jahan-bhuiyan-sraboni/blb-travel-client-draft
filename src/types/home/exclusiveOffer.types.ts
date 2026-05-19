@@ -1,9 +1,10 @@
-export interface ExclusiveOffer {
+export type ExclusiveOffer = {
   id: number;
-  title: string;
+title: string;
+   country: string;
   subtitle: string;
   locations: string;
   date: string;
   discount: string;
   image: string;
-}
+};
