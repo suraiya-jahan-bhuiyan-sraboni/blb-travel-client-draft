@@ -5,7 +5,7 @@ export default function BehindStory() {
         <section className=" bg-white text-black">
             <div className="max-w-[1440px] mx-auto lg:p-25 md:px-8 md:py-16 px-6 py-8">
                 <div className="flex md:flex-col lg:flex-row flex-col lg:gap-[90px] md:gap-12 gap-6 items-center">
-                    <div className="lg:w-1/2 w-full">
+                    <div className="lg:w-1/2 w-full ">
                         <h6 className="font-switzer lg:text-left text-center text-[11px] md:text-[13px] lg:text-[13px] leading-[22px] tracking-[1.2px] bg-gradient-to-r from-[#FE9A00] to-[#FFA500] bg-clip-text text-transparent select-none">
                             Who We Are
                         </h6>
@@ -13,13 +13,13 @@ export default function BehindStory() {
                         <p className="mb-4 text-[13px] leading-[22px] tracking-[1.2px] text-slate-500 ">BLB Travelers was born from a simple belief: travel should feel effortless, not overwhelming. In a market where travelers often faced unreliable information and unpredictable services, we set out to create something better — built on trust, reliability, and genuine care.</p>
                         <p className="text-[13px] leading-[22px] tracking-[1.2px] text-slate-500 ">The idea behind BLB Travelers is rooted in guidance and trust. From the first spark of inspiration to the final destination, we remain focused on making every journey more confident — whether discovering new horizons, planning the perfect getaway, or exploring the world with peace of mind.</p>
                     </div>
-                    <div className="lg:w-1/2 w-full">
+                    <div className="lg:w-1/2 w-full flex justify-center lg:block">
                         <Image
                             src="/about/story.jpg"
                             alt="Behind Story background"
                             width={570}
                             height={712}
-                            className="aspect-auto"
+                            className="aspect-auto "
                         />
                     </div>
                 </div>
