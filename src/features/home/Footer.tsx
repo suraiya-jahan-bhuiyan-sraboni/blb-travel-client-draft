@@ -317,7 +317,7 @@ const Footer = () => {
 
 
         
-        <div className="py-5">
+        <div className="py-5 lg:hidden">
           <Image
             src="/footer/bottom-image.png"
             alt="Payment Methods"
@@ -328,9 +328,9 @@ const Footer = () => {
         </div>
 
         
-        <div className="pb-6 pt-2 text-center font-poppins text-sm text-[#CFCFCF]">
-          Copyright &copy; 2026
-        </div>
+         <div className="border-t border-[#2B2B2B] py-3 text-center font-poppins text-sm text-[#CFCFCF]">
+      Copyright &copy; 2026
+    </div>
       </div>
     </footer>
   );
