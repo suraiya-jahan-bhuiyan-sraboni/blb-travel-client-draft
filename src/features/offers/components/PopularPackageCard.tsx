@@ -34,8 +34,10 @@ const PopularPackageCard = ({
             bg-black/40
             opacity-0
             group-hover:opacity-100
+            group-active:opacity-100
             transition-all
             duration-500
+              delay-1000
           "
         />
 
@@ -67,8 +69,11 @@ const PopularPackageCard = ({
             items-end
             opacity-0
             group-hover:opacity-100
+            group-active:opacity-100
+
             transition-all
             duration-500
+            delay-1000
             z-20
           "
         >
