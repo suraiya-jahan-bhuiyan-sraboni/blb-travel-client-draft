@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutHero = () => {
   return (
-    <section className="relative h-[640px] w-full overflow-hidden">
+    <section className="relative h-[900px] w-full overflow-hidden">
     
       <Image
         src="/about/about-hero.png"
