@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Cinzel, Lora, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Cinzel, Lora, Poppins, Jost, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Footer from "@/features/home/Footer";
 
@@ -50,6 +50,16 @@ const lora = Lora({
   variable: "--font-lora",
   subsets: ["latin"],
 });
+const jost = Jost({
+  variable: "--font-jost",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant-garamond",
+  subsets: ["latin"],
+  weight : ["300", "400", "500", "600", "700"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -87,7 +97,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${lora.variable} ${switzer.variable} h-full antialiased`}>
+      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${lora.variable} ${jost.variable} ${cormorantGaramond.variable} ${switzer.variable} h-full antialiased`}>
 
       <body className="min-h-full flex flex-col">
         <Navbar />

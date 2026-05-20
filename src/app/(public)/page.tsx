@@ -9,12 +9,12 @@ import PackageList from "@/features/home/components/PackageList";
 export default function Home() {
   return (
     <main>
-      <ExclusiveOffers/>
+      <ExclusiveOffers />
       <PackageList />
       <ClientReview />
       <Feedback />
-         <ExpertConsultation/>
-        <NewsletterSection />
+      <ExpertConsultation />
+      <NewsletterSection />
     </main>
   );
 }

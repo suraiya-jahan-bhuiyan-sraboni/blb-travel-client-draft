@@ -41,11 +41,15 @@ body {
 
 .font-switzer {
   font-family: 'Switzer', sans-serif;
+}
 
+.font-jost {
+  font-family: var(--font-jost);
+}
 
-
-
-
+.font-cormorant-garamond {
+  font-family: var(--font-cormorant-garamond);
+}
 
 .custom-datepicker {
   border: none !important;
@@ -161,4 +165,4 @@ body {
 
 .react-datepicker__triangle {
   display: none !important;
-}}
+}
