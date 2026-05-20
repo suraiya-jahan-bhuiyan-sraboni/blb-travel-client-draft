@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Cinzel, Lora, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/features/home/Footer";
-import NewsletterSection from "@/features/home/NewsletterSection";
+
 import QueryProvider from "@/providers/QueryProvider";
-import Navbar from "@/features/home/components/Navbar";
-import HeroSection from "@/features/home/components/HeroSection";
-import TrustSection from "@/features/home/components/TrustSection";
-import ExpertConsultation from "@/features/home/ExpertConsultation";
+
 import localFont from "next/font/local";
+import TrustSection from "@/features/home/components/TrustSection";
+import HeroSection from "@/features/home/components/HeroSection";
+import Navbar from "@/features/home/components/Navbar";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -74,8 +74,7 @@ export default function RootLayout({
         <QueryProvider>
           {children}
         </QueryProvider>
-        <ExpertConsultation/>
-        <NewsletterSection />
+     
         <Footer />
 
       </body>
