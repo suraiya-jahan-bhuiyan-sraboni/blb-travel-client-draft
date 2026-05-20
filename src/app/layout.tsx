@@ -6,6 +6,9 @@ import Footer from "@/features/home/Footer";
 import QueryProvider from "@/providers/QueryProvider";
 
 import localFont from "next/font/local";
+import TrustSection from "@/features/home/components/TrustSection";
+import HeroSection from "@/features/home/components/HeroSection";
+import Navbar from "@/features/home/components/Navbar";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -62,8 +65,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${switzer.variable} h-full antialiased`}>
+      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${lora.variable} ${switzer.variable} h-full antialiased`}>
+
       <body className="min-h-full flex flex-col">
+        <Navbar />
+        <HeroSection />
+        <TrustSection />
         <QueryProvider>
           {children}
         </QueryProvider>

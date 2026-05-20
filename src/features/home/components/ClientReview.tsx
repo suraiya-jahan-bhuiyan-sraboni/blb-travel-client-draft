@@ -58,7 +58,7 @@ export default function ClientReview() {
                     {review?.title}
                   </h2>
 
-                  <p className="font-switzer text-[13px] leading-[22px]  text-gray-600 text-justify tracking-[1.2px]">
+                  <p className="font-switzer  text-[13px] leading-[22px]  text-gray-600 text-justify tracking-[1.2px]">
                     {review?.review}
                     <Link href={review?.link || "#"} className="text-[#FFA500] hover:underline font-medium ml-1.5 inline-block whitespace-nowrap">
                       Read More

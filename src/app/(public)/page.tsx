@@ -5,6 +5,7 @@ import Feedback from "@/features/home/components/FeedBack";
 import NewsletterSection from "@/features/home/components/NewsletterSection";
 import PackageList from "@/features/home/components/PackageList";
 
+
 export default function Home() {
   return (
     <main>
