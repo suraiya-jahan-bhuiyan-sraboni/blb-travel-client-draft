@@ -1,8 +1,19 @@
+import Navbar from "@/features/home/components/Navbar";
+import AboutHero from "@/features/gallery/components/AboutHero";
+import GallerySection from "@/features/gallery/components/GallerySection";
+import ExclusivePackages from "@/features/gallery/components/ExclusivePackages";
+import ExploreBangladesh from "@/features/offers/components/ExploreBangladesh";
+import OfferNewsLetter from "@/features/offers/components/OfferNewsLetter";
+
 export default function GalleryPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-10">
-      <h1 className="text-4xl font-bold">Gallery</h1>
-      <p className="mt-4 text-lg text-zinc-600">Breathtaking destinations curated for you.</p>
-    </div>
+    <main>
+      <Navbar />
+      <AboutHero />
+      <GallerySection />
+      <ExclusivePackages />
+      <ExploreBangladesh />
+      <OfferNewsLetter />
+    </main>
   );
 }
