@@ -6,22 +6,19 @@ import HeroSection from "@/features/home/components/HeroSection";
 import Navbar from "@/features/home/components/Navbar";
 import NewsletterSection from "@/features/home/components/NewsletterSection";
 import PackageList from "@/features/home/components/PackageList";
-import TrustSection from "@/features/home/components/TrustSection";
+import TravelGallery from "@/features/home/components/TravelGallery";
 
 
 export default function Home() {
   return (
     <main>
-        <Navbar />
-              <HeroSection />
-              <TrustSection />
-    
-      <ExclusiveOffers/>
+      <ExclusiveOffers />
       <PackageList />
       <ClientReview />
       <Feedback />
-         <ExpertConsultation/>
-        <NewsletterSection />
+      <TravelGallery />
+      <ExpertConsultation />
+      <NewsletterSection />
     </main>
   );
 }

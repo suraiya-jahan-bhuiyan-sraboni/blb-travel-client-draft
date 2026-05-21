@@ -14,8 +14,8 @@ export default function ClientReview() {
   const reviews = clientReviews || [];
 
   return (
-    <section className="w-full bg-[#FAFAFA] text-black px-6 py-8 md:py-24 md:px-12 lg:px-20 xl:px-[120px] 2xl:px-[219.5px] relative overflow-hidden">
-      <div className="max-w-[1440px] mx-auto relative group px-4 sm:px-8 lg:px-0">
+    <section className="w-full bg-[#FAFAFA] text-black py-8 md:py-8 md:px-[32px] px-8 lg:px-20 xl:px-[120px] 2xl:px-[219.5px] relative overflow-hidden">
+      <div className="max-w-[1440px] mx-auto relative group">
 
         <Swiper
           modules={[Navigation]}
@@ -30,15 +30,15 @@ export default function ClientReview() {
         >
           {reviews?.map((review) => (
             <SwiperSlide key={review?.id}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-20 items-center py-6">
+              <div className="flex md:flex-col lg:flex-row gap-6 flex-col justify-center md:gap-8 lg:gap-11 items-center">
 
-                <div className="flex flex-col items-center justify-center w-full order-last lg:order-first">
-                  <div className="relative w-[260px] h-[340px] sm:w-[320px] sm:h-[440px] md:w-[400px] md:h-[540px] rounded-t-full overflow-hidden shadow-md">
+                <div className="flex flex-col items-center justify-center order-last lg:order-first">
+                  <div className="relative lg:w-[456px] lg:h-[533px]  md:w-[456px] md:h-[533px] w-[314px] h-[350px] rounded-t-full overflow-hidden shadow-md">
                     <Image
                       src={review?.image}
                       alt={`${review?.country} Review`}
                       fill
-                      sizes="(max-w-640px) 260px, (max-w-768px) 320px, 400px"
+                        sizes="(max-w-640px) 260px, (max-w-768px) 320px, 400px"
                       priority
                       className="object-cover object-center"
                     />
@@ -53,12 +53,12 @@ export default function ClientReview() {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:max-w-[520px] px-2 sm:px-6 lg:px-0 order-first lg:order-last">
+                <div className="flex  flex-col items-center lg:items-start text-center lg:text-left w-full lg:max-w-[520px] px-2 sm:px-6 lg:px-0 order-first lg:order-last">
                   <h2 className="font-lora text-[24px] leading-[36px] md:text-[32px] md:leading-[48px] lg:text-[40px] font-medium tracking-[2.5px] text-[#1E293B] mb-4 lg:mb-6">
                     {review?.title}
                   </h2>
 
-                  <p className="font-switzer  text-[13px] leading-[22px]  text-gray-600 text-justify tracking-[1.2px]">
+                  <p className="font-switzer text-[13px] leading-[22px]  text-gray-600 text-justify tracking-[1.2px]">
                     {review?.review}
                     <Link href={review?.link || "#"} className="text-[#FFA500] hover:underline font-medium ml-1.5 inline-block whitespace-nowrap">
                       Read More
