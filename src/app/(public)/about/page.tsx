@@ -1,4 +1,5 @@
 import AboutHero from "@/features/about/components/AboutHero";
+import ExclusivePackages from "@/features/about/components/ExclusivePackages";
 import GallerySection from "@/features/gallery/components/GallerySection";
 import Navbar from "@/features/home/components/Navbar";
 import ExploreBangladesh from "@/features/offers/components/ExploreBangladesh";
@@ -10,6 +11,7 @@ const AboutPage = () => {
       <Navbar/>
       <AboutHero />
       <GallerySection />
+      <ExclusivePackages/>
       <ExploreBangladesh />
       <OfferNewsLetter/>
     </main>
