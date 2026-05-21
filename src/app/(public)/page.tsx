@@ -4,6 +4,7 @@ import ExpertConsultation from "@/features/home/components/ExpertConsultation";
 import Feedback from "@/features/home/components/FeedBack";
 import NewsletterSection from "@/features/home/components/NewsletterSection";
 import PackageList from "@/features/home/components/PackageList";
+import TravelGallery from "@/features/home/components/TravelGallery";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <PackageList />
       <ClientReview />
       <Feedback />
+      <TravelGallery />
       <ExpertConsultation />
       <NewsletterSection />
     </main>

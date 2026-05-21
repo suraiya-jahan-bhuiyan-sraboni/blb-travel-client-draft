@@ -8,7 +8,7 @@ export default function OurTeam() {
             <div className="bg-[#FBFAF8]">
                 <div className="max-w-[1440px] lg:p-25 md:py-16 lg:px-8 py-8 px-6 mx-auto">
                     <h6 className="font-switzer text-center text-[11px] md:text-[13px] lg:text-[13px] leading-[22px] tracking-[1.2px] bg-gradient-to-r from-[#FE9A00] to-[#FFA500] bg-clip-text text-transparent select-none">
-                        The People
+                        Quetions
                     </h6>
                     <h1 className="font-lora text-center text-slate-800 text-2xl  md:text-[32px] lg:text-[40px] lg:leading-18 md:leading-12 leading-9 lg:tracking-[2.5px] md:tracking-[5%] tracking-[2px] lg:mt-6 lg:mb-4 md:mt-2 md:mb-4 mt-4 mb-4">Meet Our Team</h1>
 

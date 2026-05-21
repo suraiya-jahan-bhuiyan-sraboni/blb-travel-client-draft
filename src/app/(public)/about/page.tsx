@@ -1,4 +1,5 @@
 import BehindStory from "@/features/about/BehindStory";
+import FAQ from "@/features/about/FAQ";
 import OurPurpose from "@/features/about/OurPurpose";
 import OurStory from "@/features/about/OurStory";
 import OurTeam from "@/features/about/OurTeam";
@@ -12,6 +13,7 @@ export default function AboutPage() {
       <TrustSection />
       <OurPurpose />
       <OurTeam />
+      <FAQ />
     </section>
   );
 }
