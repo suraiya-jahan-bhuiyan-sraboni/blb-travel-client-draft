@@ -18,4 +18,4 @@ export default function AboutPage() {
   );
 };
 
-export default AboutPage;
+// export default AboutPage;
