@@ -16,4 +16,6 @@ export default function AboutPage() {
       <FAQ />
     </section>
   );
-}
+};
+
+export default AboutPage;

@@ -7,49 +7,60 @@ export default function OfferNewsLetter() {
     <section className="w-full">
       <div
         className="
-          relative 
-          h-[450px] 
-          w-full 
+          relative
+          h-[380px]
+          sm:h-[420px]
+          md:h-[450px]
+          w-full
           overflow-hidden
         "
       >
-      
+       
         <div
           className="
-            absolute 
-            inset-0 
-           bg-[url('/offers/offer-bg.jpg')]
-            bg-cover 
+            absolute
+            inset-0
+            bg-[url('/offers/offer-bg.jpg')]
+            bg-cover
             bg-center
             bg-no-repeat
+            scale-105
           "
         />
 
-     
-        <div className="absolute inset-0 bg-[#00000033]" />
+       
+        <div className="absolute inset-0 bg-black/40" />
 
-      
+       
         <div
           className="
-            relative 
-            z-10 
-            flex 
-            h-full 
-            flex-col 
+            relative
+            z-10
+            flex
+            h-full
+            flex-col
             justify-center
-            pl-[92px]
+            px-5
+            sm:px-8
+            md:px-[92px]
           "
         >
         
           <h2
             className="
-              max-w-[453px]
+              max-w-full
+              md:max-w-[453px]
               font-lora
-              text-[40px]
+              text-[26px]
+              sm:text-[34px]
+              md:text-[40px]
               font-normal
               uppercase
-              leading-[72px]
-              tracking-[2.5px]
+              leading-[40px]
+              sm:leading-[54px]
+              md:leading-[72px]
+              tracking-[1.2px]
+              md:tracking-[2.5px]
               text-white
             "
           >
@@ -60,10 +71,11 @@ export default function OfferNewsLetter() {
           <Link
             href="/"
             className="
-              mt-[40px]
+              mt-6
+              md:mt-[40px]
               flex
-              h-[41px]
-              w-[129px]
+              h-[44px]
+              w-[140px]
               items-center
               justify-center
               rounded-[2px]
@@ -73,10 +85,10 @@ export default function OfferNewsLetter() {
               py-[12px]
               text-center
               font-switzer
-              text-[13px]
+              text-[12px]
+              md:text-[13px]
               font-normal
               uppercase
-              leading-[100%]
               tracking-[1.5px]
               text-white
               transition-all
