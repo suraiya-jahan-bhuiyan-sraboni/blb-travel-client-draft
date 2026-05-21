@@ -1,21 +1,21 @@
-// import AboutHero from "@/features/about/components/AboutHero";
-// import ExclusivePackages from "@/features/about/components/ExclusivePackages";
-// import GallerySection from "@/features/gallery/components/GallerySection";
-// import Navbar from "@/features/home/components/Navbar";
-// import ExploreBangladesh from "@/features/offers/components/ExploreBangladesh";
-// import OfferNewsLetter from "@/features/offers/components/OfferNewsLetter";
+import BehindStory from "@/features/about/BehindStory";
+import FAQ from "@/features/about/FAQ";
+import OurPurpose from "@/features/about/OurPurpose";
+import OurStory from "@/features/about/OurStory";
+import OurTeam from "@/features/about/OurTeam";
+import TrustSection from "@/features/home/components/TrustSection";
 
-// const AboutPage = () => {
-//   return (
-//     <main>
-//       <Navbar/>
-//       <AboutHero />
-//       <GallerySection />
-//       <ExclusivePackages/>
-//       <ExploreBangladesh />
-//       <OfferNewsLetter/>
-//     </main>
-//   );
-// };
+export default function AboutPage() {
+  return (
+    <section>
+      <OurStory />
+      <BehindStory />
+      <TrustSection />
+      <OurPurpose />
+      <OurTeam />
+      <FAQ />
+    </section>
+  );
+};
 
 // export default AboutPage;
