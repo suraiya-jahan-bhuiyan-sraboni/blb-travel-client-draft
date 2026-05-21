@@ -1,8 +1,21 @@
+import BehindStory from "@/features/about/BehindStory";
+import FAQ from "@/features/about/FAQ";
+import OurPurpose from "@/features/about/OurPurpose";
+import OurStory from "@/features/about/OurStory";
+import OurTeam from "@/features/about/OurTeam";
+import TrustSection from "@/features/home/components/TrustSection";
+
 export default function AboutPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-10">
-      <h1 className="text-4xl font-bold">About Us</h1>
-      <p className="mt-4 text-lg text-zinc-600">Discover our story and mission at BLB Travels.</p>
-    </div>
+    <section>
+      <OurStory />
+      <BehindStory />
+      <TrustSection />
+      <OurPurpose />
+      <OurTeam />
+      <FAQ />
+    </section>
   );
-}
+};
+
+// export default AboutPage;

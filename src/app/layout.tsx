@@ -1,6 +1,63 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Cinzel, Lora, Poppins, Jost, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import Footer from "@/features/home/Footer";
+
+import QueryProvider from "@/providers/QueryProvider";
+
+import localFont from "next/font/local";
+
+
+const switzer = localFont({
+  src: [
+    {
+      path: "../../public/Switzer-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/Switzer-SemiboldItalic.woff2",
+      weight: "600",
+      style: "italic",
+    },
+    {
+      path: "../../public/Switzer-Semibold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/Switzer-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/Switzer-Extrabold.woff2",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../../public/Switzer-Black.woff2",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-switzer",
+});
+
+const lora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin"],
+});
+const jost = Jost({
+  variable: "--font-jost",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant-garamond",
+  subsets: ["latin"],
+  weight : ["300", "400", "500", "600", "700"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +73,19 @@ export const metadata: Metadata = {
   title: "BLB Travels",
   description: "Your premium travel partner.",
 };
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+
 
 export default function RootLayout({
   children,
@@ -25,9 +95,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+      className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${poppins.variable} ${lora.variable} ${jost.variable} ${cormorantGaramond.variable} ${switzer.variable} h-full antialiased`}>
+
+      <body className="min-h-full flex flex-col">
+      
+        <QueryProvider>
+          {children}
+        </QueryProvider>
+     
+        <Footer />
+
+      </body>
     </html>
   );
 }
