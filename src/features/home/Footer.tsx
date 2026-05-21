@@ -62,33 +62,34 @@ const Footer = () => {
       
               <h3 className={`${headingStyle} mb-6`}>Services</h3>
 
-              <div className="flex gap-6">
-     
-                <div className="flex flex-col gap-4">
-                  {servicesColumnOne.map((service) => (
-                    <Link
-                      key={service.label}
-                      href={service.href}
-                      className="font-poppins whitespace-nowrap text-[14px] text-[#D1D1D1] transition hover:text-[#D89B29]"
-                    >
-                      {service.label}
-                    </Link>
-                  ))}
-                </div>
+             <div className="flex flex-col gap-6">
+  
+ 
+  <div className="flex flex-col gap-4">
+    {servicesColumnOne.slice(0, 4).map((service) => (
+      <Link
+        key={service.label}
+        href={service.href}
+        className="font-poppins whitespace-nowrap text-[14px] text-[#D1D1D1] transition hover:text-[#D89B29]"
+      >
+        {service.label}
+      </Link>
+    ))}
+  </div>
 
-            
-                <div className="flex flex-col gap-4">
-                  {servicesColumnTwo.map((service) => (
-                    <Link
-                      key={service.label}
-                      href={service.href}
-                      className="font-poppins whitespace-nowrap text-[14px] text-[#D1D1D1] transition hover:text-[#D89B29]"
-                    >
-                      {service.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
+ 
+  <div className="flex flex-col gap-4">
+    {[...servicesColumnOne.slice(4), ...servicesColumnTwo].map((service) => (
+      <Link
+        key={service.label}
+        href={service.href}
+        className="font-poppins whitespace-nowrap text-[14px] text-[#D1D1D1] transition hover:text-[#D89B29]"
+      >
+        {service.label}
+      </Link>
+    ))}
+  </div>
+</div>
 
           
               <div className="mt-10">

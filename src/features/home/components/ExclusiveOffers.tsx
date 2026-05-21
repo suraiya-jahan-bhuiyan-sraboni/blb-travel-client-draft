@@ -131,14 +131,15 @@ export default function ExclusiveOffers() {
     
           <div
             className="
-              group
-              relative
-              z-10
-              h-[350px]
-              w-[800px]
-              shrink-0
-              overflow-hidden
-              bg-white
+             group
+    relative
+    z-10
+    h-[350px]
+    w-full
+    max-w-[800px]
+    shrink-0
+    overflow-hidden
+    bg-white
             "
             onMouseEnter={() => setShowOverlay(true)}
             onMouseLeave={() => setShowOverlay(false)}
@@ -155,6 +156,113 @@ export default function ExclusiveOffers() {
                 group-hover:scale-[1.02]
               "
             />
+
+
+                   
+<button
+  onClick={handlePrev}
+  className="
+    absolute
+    left-3
+    top-1/2
+    z-30
+    flex
+    h-[42px]
+    w-[42px]
+    -translate-y-1/2
+    items-center
+    justify-center
+    rounded-full
+    border
+    border-white/40
+    bg-black/30
+    backdrop-blur-sm
+    xl:hidden
+  "
+>
+  <ChevronLeft
+    size={20}
+    className="text-white"
+  />
+</button>
+
+
+<button
+  onClick={handleNext}
+  className="
+    absolute
+    right-3
+    top-1/2
+    z-30
+    flex
+    h-[42px]
+    w-[42px]
+    -translate-y-1/2
+    items-center
+    justify-center
+    rounded-full
+    border
+    border-white/40
+    bg-black/30
+    backdrop-blur-sm
+    xl:hidden
+  "
+>
+  <ChevronRight
+    size={20}
+    className="text-white"
+  />
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
        
             <div className="absolute inset-0 bg-black/10" />
