@@ -1,13 +1,10 @@
 "use client";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
 import { vacationPackages } from "@/constants/offers/vacationPackages";
 import VacationCard from "./components/VacationCard";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/navigation";
 
 const Vacation = () => {
   return (
@@ -29,16 +26,11 @@ const Vacation = () => {
           </p>
         </div>
 
-     
-        <div className="mt-10 md:mt-12 relative">
+        <div className="mt-10 md:mt-12">
           <Swiper
-            modules={[Navigation]}
-            navigation
             spaceBetween={20}
+            slidesPerView={1}
             breakpoints={{
-              0: {
-                slidesPerView: 1,
-              },
               768: {
                 slidesPerView: 2,
               },
@@ -49,7 +41,11 @@ const Vacation = () => {
           >
             {vacationPackages.map((item, index) => (
               <SwiperSlide key={item.id}>
-                <VacationCard item={item} index={index} />
+                <VacationCard
+                  item={item}
+                  index={index}
+                  totalCards={vacationPackages.length}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
