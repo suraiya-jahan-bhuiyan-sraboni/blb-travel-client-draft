@@ -53,7 +53,7 @@ export default function OurTeam() {
                                 </div>
 
                                 <div className="flex flex-col items-center justify-center flex-wrap w-full">
-                                    <h4 className="font-lora text-[#8A99AD] text-sm sm:text-base md:text-lg font-normal tracking-[0.5px] mb-1 sm:mb-2 w-full break-words">
+                                    <h4 className="font-lora text-slate-600 text-sm sm:text-base md:text-lg font-semibold tracking-[0.5px] mb-1 sm:mb-2 w-full break-words">
                                         {member.name}
                                     </h4>
                                     <p className="font-switzer text-[#FFA500] text-[9px] sm:text-[10px] md:text-[11px] leading-tight tracking-[1.5px] uppercase font-medium w-[150px] lg:w-full break-words">

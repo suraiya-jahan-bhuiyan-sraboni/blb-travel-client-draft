@@ -70,14 +70,14 @@ export default function TrustSection() {
                     </div>
                     {/* 3 Trust section  */}
                     <div className="flex lg:flex-row flex-col gap-4 mt-20">
-                        <div className="bg-black">
+                        <div className="bg-black hover:-translate-y-6 transition-all duration-500 ease-out">
                             <div className="lg:px-[70px] md:px-[70px] p-8 md:py-[52px] lg:py-[52px] ">
                                 <h2 className="font-cormorant-garamond text-[#C8A96A] font-light text-[64px] leading-[64px]">01</h2>
                                 <h4 className="font-cormorant-garamond text-[34px] leading-[100%] my-4">Reliability</h4>
                                 <p className="font-jost font-light text-[13px] leading-[24px]">Every booking, every itinerary, every <br /> commitment— delivered with absolute precision <br /> and care.</p>
                             </div>
                         </div>
-                        <div className="bg-black">
+                        <div className="bg-black hover:-translate-y-6 transition-all duration-500 ease-out">
                             <div className="lg:px-[70px] md:px-[70px] p-8 md:py-[52px] lg:py-[52px]">
                                 <h2 className="font-cormorant-garamond text-[#C8A96A] font-light text-[64px] leading-[64px]">02</h2>
                                 <h4 className="font-cormorant-garamond text-[34px] leading-[100%] my-4">Transparency</h4>
@@ -85,7 +85,7 @@ export default function TrustSection() {
                                     <br /> complete clarity from the first consultation to <br /> final departure.</p>
                             </div>
                         </div>
-                        <div className="bg-black">
+                        <div className="bg-black hover:-translate-y-6 transition-all duration-500 ease-out">
                             <div className="lg:px-[70px] md:px-[70px] p-8 md:py-[52px] lg:py-[52px]">
                                 <h2 className="font-cormorant-garamond text-[#C8A96A] font-light text-[64px] leading-[64px]">03</h2>
                                 <h4 className="font-cormorant-garamond text-[34px] leading-[100%] my-4">Excellence</h4>
