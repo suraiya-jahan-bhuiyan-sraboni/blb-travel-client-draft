@@ -39,7 +39,6 @@ export default function ExclusiveOffers() {
     }, 400);
   };
 
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowOverlay(true);
@@ -51,7 +50,7 @@ export default function ExclusiveOffers() {
   return (
     <section className="w-full overflow-hidden bg-[#F5F5F5] py-[100px]">
       <div className="mx-auto flex max-w-[1282px] flex-col gap-[44px]">
-      
+        
         <div className="flex items-center justify-center">
           <h2
             className="
@@ -71,7 +70,6 @@ export default function ExclusiveOffers() {
           </h2>
         </div>
 
-     
         <div
           className="
             mx-auto
@@ -84,7 +82,7 @@ export default function ExclusiveOffers() {
             px-[40px]
           "
         >
-      
+          
           <div className="hidden xl:block shrink-0">
             <div className="relative h-[250px] w-[400px] overflow-hidden bg-white">
               <Image
@@ -128,18 +126,17 @@ export default function ExclusiveOffers() {
             </div>
           </div>
 
-    
           <div
             className="
-             group
-    relative
-    z-10
-    h-[350px]
-    w-full
-    max-w-[800px]
-    shrink-0
-    overflow-hidden
-    bg-white
+              group
+              relative
+              z-10
+              h-[350px]
+              w-full
+              max-w-[800px]
+              shrink-0
+              overflow-hidden
+              bg-white
             "
             onMouseEnter={() => setShowOverlay(true)}
             onMouseLeave={() => setShowOverlay(false)}
@@ -157,117 +154,62 @@ export default function ExclusiveOffers() {
               "
             />
 
+            <button
+              onClick={handlePrev}
+              className="
+                absolute
+                left-3
+                top-1/2
+                z-30
+                flex
+                h-[42px]
+                w-[42px]
+                -translate-y-1/2
+                items-center
+                justify-center
+                rounded-full
+                border
+                border-white/40
+                bg-black/60
+                backdrop-blur-sm
+                xl:hidden
+              "
+            >
+              <ChevronLeft
+                size={20}
+                className="text-white"
+              />
+            </button>
 
-                   
-<button
-  onClick={handlePrev}
-  className="
-    absolute
-    left-3
-    top-1/2
-    z-30
-    flex
-    h-[42px]
-    w-[42px]
-    -translate-y-1/2
-    items-center
-    justify-center
-    rounded-full
-    border
-    border-white/40
-    bg-black/30
-    backdrop-blur-sm
-    xl:hidden
-  "
->
-  <ChevronLeft
-    size={20}
-    className="text-white"
-  />
-</button>
+            <button
+              onClick={handleNext}
+              className="
+                absolute
+                right-3
+                top-1/2
+                z-30
+                flex
+                h-[42px]
+                w-[42px]
+                -translate-y-1/2
+                items-center
+                justify-center
+                rounded-full
+                border
+                border-white/40
+                bg-black/30
+                backdrop-blur-sm
+                xl:hidden
+              "
+            >
+              <ChevronRight
+                size={20}
+                className="text-white"
+              />
+            </button>
 
+            <div className="absolute inset-0 bg-black/35" />
 
-<button
-  onClick={handleNext}
-  className="
-    absolute
-    right-3
-    top-1/2
-    z-30
-    flex
-    h-[42px]
-    w-[42px]
-    -translate-y-1/2
-    items-center
-    justify-center
-    rounded-full
-    border
-    border-white/40
-    bg-black/30
-    backdrop-blur-sm
-    xl:hidden
-  "
->
-  <ChevronRight
-    size={20}
-    className="text-white"
-  />
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-            <div className="absolute inset-0 bg-black/10" />
-
-            
             <div
               className={`
                 absolute
@@ -299,19 +241,20 @@ export default function ExclusiveOffers() {
               </h3>
             </div>
 
-         
             <div
               className={`
                 absolute
                 left-1/2
-                top-1/2
+                top-[48%]
                 z-20
-                w-[360px]
+                w-[420px]
                 -translate-x-1/2
                 -translate-y-1/2
-                border
-                border-[#FE9A00]
-                bg-[#0B0B0B]/95
+                overflow-hidden
+              
+               
+                bg-black/30
+                backdrop-blur-0
                 px-[22px]
                 py-[20px]
                 transition-all
@@ -319,128 +262,164 @@ export default function ExclusiveOffers() {
                 ${
                   showOverlay
                     ? "opacity-100 scale-100"
-                    : "pointer-events-none opacity-0 scale-90"
+                    : "pointer-events-none opacity-0 scale-95"
                 }
               `}
             >
-           
-              <div className="mb-[10px] flex items-center justify-between">
-                <h4
-                  className="
-                    text-[15px]
-                    font-semibold
-                    leading-[24px]
-                    text-[#DAA620]
-                  "
-                  style={{
-                    fontFamily: "Lora",
-                    letterSpacing: "0.05em",
-                  }}
-                >
-                  {activeOffer.title}
-                </h4>
+              <div
+                className="
+                  absolute
+                  inset-0
+                  bg-gradient-to-b
+                  from-black/70
+                  via-black/55
+                  to-black/75
+                "
+              />
 
-                <span
+              <div className="relative z-10">
+                
+                <div className="mb-[10px] flex items-center justify-between">
+                  <h4
+                    className="
+                      text-[15px]
+                      font-semibold
+                      leading-[24px]
+                      text-[#DAA620]
+                    "
+                    style={{
+                      fontFamily: "Lora",
+                      letterSpacing: "0.05em",
+                    }}
+                  >
+                    {activeOffer.title}
+                  </h4>
+
+                  <span
+                    className="
+                      text-[14px]
+                      font-medium
+                      leading-[20px]
+                      text-white
+                    "
+                    style={{
+                      fontFamily: "Switzer",
+                      letterSpacing: "0.03em",
+                    }}
+                  >
+                    {activeOffer.discount.split("·")[1]}
+                  </span>
+                </div>
+
+                <div className="relative mb-[12px] pb-[12px]">
+                  <p
+                    className="
+                      text-[14px]
+                      font-normal
+                      uppercase
+                      text-white/70
+                    "
+                    style={{
+                      fontFamily: "Switzer",
+                      letterSpacing: "1.2px",
+                      fontVariant: "small-caps",
+                    }}
+                  >
+                    {activeOffer.subtitle}
+                  </p>
+
+                  <div
+                    className="
+                      absolute
+                      bottom-0
+                      left-0
+                      h-[1px]
+                      w-[85%]
+                      left-1/2 -translate-x-1/2
+                   
+                      bg-gradient-to-r
+                      from-transparent
+                      via-white/20
+                      to-transparent
+                    "
+                  />
+                </div>
+
+                <div className="relative mb-[12px] pb-[12px]">
+                  <p
+                    className="
+                      text-[14px]
+                      font-normal
+                      leading-[22px]
+                      text-white
+                    "
+                    style={{
+                      fontFamily: "Switzer",
+                    }}
+                  >
+                    {activeOffer.locations}
+                  </p>
+
+                  <div
+                    className="
+                      absolute
+                      bottom-0
+                      left-0
+                      h-[1px]
+                      w-full
+                      bg-gradient-to-r
+                      from-transparent
+                      via-white/20
+                      to-transparent
+                    "
+                  />
+                </div>
+
+                <p
                   className="
+                    mb-[18px]
                     text-[14px]
-                    font-medium
-                    leading-[20px]
+                    font-normal
                     text-white
                   "
                   style={{
                     fontFamily: "Switzer",
-                    letterSpacing: "0.03em",
                   }}
                 >
-                  {activeOffer.discount.split("·")[1]}
-                </span>
-              </div>
+                  {activeOffer.date}
+                </p>
 
-           
-              <p
-                className="
-                  mb-[12px]
-                  border-b
-                  border-white/20
-                  pb-[12px]
-                  text-[14px]
-                  font-normal
-                  uppercase
-                  text-white/70
-                "
-                style={{
-                  fontFamily: "Switzer",
-                  letterSpacing: "1.2px",
-                  fontVariant: "small-caps",
-                }}
-              >
-                {activeOffer.subtitle}
-              </p>
-
-            
-              <p
-                className="
-                  mb-[12px]
-                  border-b
-                  border-white/20
-                  pb-[12px]
-                  text-[14px]
-                  font-normal
-                  leading-[22px]
-                  text-white
-                "
-                style={{
-                  fontFamily: "Switzer",
-                }}
-              >
-                {activeOffer.locations}
-              </p>
-
-              <p
-                className="
-                  mb-[18px]
-                  text-[14px]
-                  font-normal
-                  text-white
-                "
-                style={{
-                  fontFamily: "Switzer",
-                }}
-              >
-                {activeOffer.date}
-              </p>
-
-          
-              <div className="flex justify-center">
-                <Link
-                  href="/offers"
-                  className="
-                    flex
-                    h-[42px]
-                    min-w-[210px]
-                    items-center
-                    justify-center
-                    rounded-[2px]
-                    border
-                    border-[#FE9A00]
-                    bg-transparent
-                    px-[24px]
-                    text-[14px]
-                    font-medium
-                    text-[#FE9A00]
-                    transition-all
-                    duration-300
-                    hover:bg-gradient-to-r
-                    hover:from-[#FE9A00]
-                    hover:to-[#FFA500]
-                    hover:text-white
-                  "
-                  style={{
-                    fontFamily: "Switzer",
-                  }}
-                >
-                  Explore Packages
-                </Link>
+                <div className="flex justify-center">
+                  <Link
+                    href="/offers"
+                    className="
+                      flex
+                      h-[42px]
+                      min-w-[210px]
+                      items-center
+                      justify-center
+                      rounded-[2px]
+                    
+                  
+                      bg-transparent
+                      px-[24px]
+                      text-[14px]
+                      font-medium
+                      text-[#FE9A00]
+                      transition-all
+                      duration-300
+                      hover:bg-gradient-to-r
+                      hover:from-[#FE9A00]
+                      hover:to-[#FFA500]
+                      hover:text-white
+                    "
+                    style={{
+                      fontFamily: "Switzer",
+                    }}
+                  >
+                    Explore Packages
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -489,7 +468,6 @@ export default function ExclusiveOffers() {
           </div>
         </div>
 
-      
         <div className="flex justify-center">
           <Link
             href="/offers"
@@ -499,8 +477,8 @@ export default function ExclusiveOffers() {
               items-center
               justify-center
               rounded-[2px]
-              border
               border-[#FE9A00]
+            
               px-[24px]
               text-[13px]
               font-normal
